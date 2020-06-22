@@ -23,7 +23,7 @@ export class LogInFormComponent implements OnInit {
   }
 
   onToggleDetails() {
-    this.log.push(this.log.length + 1);
+    this.log.push(new Date());
     this.showSecret = !this.showSecret
   }
 }
