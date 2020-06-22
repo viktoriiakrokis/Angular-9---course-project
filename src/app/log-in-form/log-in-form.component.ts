@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class LogInFormComponent implements OnInit {
   firstName = 'Viktoriia';
   lastName = "Krokis"
+  showSecret= false;
+  log = [];
 
   constructor() { }
 
@@ -20,4 +22,8 @@ export class LogInFormComponent implements OnInit {
   }
   }
 
+  onToggleDetails() {
+    this.log.push(this.log.length + 1);
+    this.showSecret = !this.showSecret
+  }
 }
