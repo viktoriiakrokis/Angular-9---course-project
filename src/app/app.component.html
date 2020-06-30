@@ -1,4 +1,38 @@
-<app-header></app-header>
+<form [formGroup]="userprofileForm" (ngSubmit)="onSubmit()">
+  <label>
+    First Name
+    <input type="text" formControlName="firstName">
+  </label>
+  <label>
+    Second Name
+    <input type="text" formControlName="secondName">
+  </label>
+
+  <div formGroupName="address"> 
+    <h3>Address</h3>
+    <label>
+      Address 1
+      <input type="text" formControlName="address1">
+    </label>
+    <label>
+      Address 1
+      <input type="text" formControlName="address2">
+    </label>
+    <label>
+      State
+      <input type="text" formControlName="state">
+    </label>
+    <label>
+      Zip Code
+      <input type="text" formControlName="zip">
+    </label>
+  </div>
+  <button type="submit" disabled="!userprofileForm.valid">Submit</button>
+</form>
+
+<!-- <app-header></app-header>
+<app-fist-form></app-fist-form>
+
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
@@ -6,4 +40,4 @@
       <app-shopping-list></app-shopping-list>
     </div>
   </div>
-</div>
+</div> -->
