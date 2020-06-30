@@ -30,6 +30,38 @@
   <button type="submit" disabled="!userprofileForm.valid">Submit</button>
 </form>
 
+<label>
+  Enter Email
+  <input type="text" [formControl]="email">
+</label>
+
+<p>
+  Display Value: {{ email.value }}
+</p>
+
+<button (click)="updateEmail()">Click to update email</button>
+
+
+<form [FormGroup]="userForm" (ngSubmit)="onSubmit2">
+  <label>
+    Name 1
+    <input type="text" formControlName="name1">
+  </label>
+  <label>
+    Name 2
+    <input type="text" formControlName="name2">
+  </label>
+  <label>
+    Age
+    <input type="text" formControlName="age">
+  </label>
+  <label>
+    Email
+    <input type="text" formControlName="email">
+  </label>
+
+  <button type="submit" disabled="!userForm.valid">Submit</button>
+</form>
 <!-- <app-header></app-header>
 <app-fist-form></app-fist-form>
 
