@@ -11,7 +11,8 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
-import { FistFormComponent } from './fist-form/fist-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PostApiComponent } from './post-api/post-api.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +24,13 @@ import { FistFormComponent } from './fist-form/fist-form.component';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    FistFormComponent,
+    PostApiComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
