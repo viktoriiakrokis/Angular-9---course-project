@@ -13,6 +13,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostApiComponent } from './post-api/post-api.component';
+import { GetApiComponent } from './get-api/get-api.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PostApiComponent } from './post-api/post-api.component';
     ShoppingListComponent,
     ShoppingEditComponent,
     PostApiComponent,
+    GetApiComponent,
   ],
   imports: [
     BrowserModule,

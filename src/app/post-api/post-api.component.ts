@@ -18,5 +18,4 @@ export class PostApiComponent implements OnInit {
     this.http.post('http://localhost:3000', data).subscribe((result)=>{console.log("result", result)})
     console.warn(data)
   }
-
 }
