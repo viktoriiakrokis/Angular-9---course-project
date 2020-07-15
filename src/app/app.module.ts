@@ -14,6 +14,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { HttpClientModule } from '@angular/common/http';
 import { PostApiComponent } from './post-api/post-api.component';
 import { GetApiComponent } from './get-api/get-api.component';
+import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { GetApiComponent } from './get-api/get-api.component';
     ShoppingEditComponent,
     PostApiComponent,
     GetApiComponent,
+    ComponentInteractionComponent,
   ],
   imports: [
     BrowserModule,

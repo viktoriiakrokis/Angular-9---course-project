@@ -10,6 +10,9 @@ import { Validator } from '@angular/forms';
 })
 
 export class AppComponent {
+  title = "app";
+  public name = "Vishwas";
+  public message = "";
 
   constructor(private fb: FormBuilder) {}
 

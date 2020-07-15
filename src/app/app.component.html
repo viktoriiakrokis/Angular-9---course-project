@@ -65,6 +65,9 @@
 
 <app-post-api></app-post-api>
 
+<app-component-interaction (childEvent)="message=$event" [parentData]="name"></app-component-interaction>
+<h1>{{message}}</h1>
+
 <!-- <app-header></app-header>
 <app-fist-form></app-fist-form>
 
